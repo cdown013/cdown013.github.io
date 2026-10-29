@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cameren Downs - IT, Cybersecurity, and Engineering Portfolio">
+  <title>Cameren Downs | Portfolio</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --surface: #ffffff;
+      --text: #172033;
+      --muted: #5d687c;
+      --accent: #2f5bea;
+      --border: #dfe5ef;
+      --dark: #111827;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav .brand {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    nav .links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav .links a {
+      color: white;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 90px 0 70px;
+      background: linear-gradient(135deg, #eef3ff, #ffffff);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.8rem);
+      line-height: 1.05;
+      margin: 10px 0 18px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      text-decoration: none;
+      opacity: 0.92;
+    }
+
+    section { padding: 64px 0; }
+
+    h2 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    h3 { margin-bottom: 8px; }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 18px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.05);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .muted { color: var(--muted); }
+    ul { padding-left: 20px; }
+
+    .tagline {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 36px 0;
+      margin-top: 30px;
+    }
+
+    footer p { margin: 6px 0; }
+
+    @media (max-width: 650px) {
+      .hero { padding-top: 60px; }
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Cameren Downs</div>
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Toolkit</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Class Portfolio</div>
+        <h1>Cameren Downs</h1>
+        <p>
+          IT, cybersecurity, and engineering professional focused on security monitoring,
+          endpoint tools, Microsoft 365, construction technology, and practical technical
+          problem solving.
+        </p>
+        <a class="button" href="#projects">View my work</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>A little about me</h2>
+        <div class="card">
+          <p>
+            I work in IT and cybersecurity at S.B. Ballard Construction Company, supporting
+            security monitoring, endpoint tools, Microsoft 365, and construction-team
+            technology. I enjoy making technical systems easier to use, whether that means
+            investigating an alert, organizing project documents, or helping teammates work
+            from the right drawings.
+          </p>
+          <p>
+            I earned bachelor's degrees in Computer Engineering Technology and Electronics
+            Engineering Technology and am continuing my education in computer science.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="card">
+          <div class="tagline">IT / Cybersecurity · 2025–Present</div>
+          <h3>S.B. Ballard Construction Company</h3>
+          <p class="muted">Virginia Beach, VA</p>
+          <ul>
+            <li>Support day-to-day security operations and technical workflows in a commercial construction environment.</li>
+            <li>Review endpoint and identity alerts and investigate security events using CrowdStrike Falcon and NinjaOne.</li>
+            <li>Support Microsoft 365, SharePoint, and Bluebeam Revu workflows for project teams.</li>
+            <li>Verify drawing and addendum versions so field staff can work from current documents.</li>
+            <li>Create documentation, checklists, user guidance, and practical AI-use training for construction staff.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>My toolkit</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Cybersecurity</h3>
+            <p>CrowdStrike Falcon EDR &amp; SIEM, identity detections, alert workflows, event analysis, malware investigation</p>
+          </div>
+          <div class="card">
+            <h3>IT &amp; Construction Tech</h3>
+            <p>NinjaOne, Microsoft 365, SharePoint, Bluebeam Revu, endpoint support, document-version checks</p>
+          </div>
+          <div class="card">
+            <h3>Programming &amp; Engineering</h3>
+            <p>Python, C++, AutoCAD, Multisim, Arduino, Raspberry Pi, OpenCV, TensorFlow, embedded systems</p>
+          </div>
+          <div class="card">
+            <h3>Team Operations</h3>
+            <p>Scheduling, coordination, training, documentation, communication, and project support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="eyebrow">Selected work &amp; learning</div>
+        <h2>Curiosity in action</h2>
+
+        <div class="card">
+          <div class="tagline">Senior Project · Spring 2024</div>
+          <h3>Object Tracking Camera</h3>
+          <p>
+            Designed a smart camera system that detects, classifies, and tracks objects in
+            real time using Raspberry Pi, Python, OpenCV, and TensorFlow. The project combined
+            software and hardware through motor control, computer-vision workflows, device
+            interfaces, and system testing.
+          </p>
+          <p><strong>Focus areas:</strong> real-time detection, classification, tracking, motor control, testing, documentation, teamwork</p>
+        </div>
+
+        <div class="card">
+          <h3>Construction technology in practice</h3>
+          <p>
+            I help project teams navigate SharePoint and Bluebeam Revu, verify current drawings
+            and addenda, resolve access and collaboration issues, and contribute to endpoint
+            monitoring, security investigations, workflow improvements, and technical documentation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>M.S. Computer Science</h3>
+            <p>Old Dominion University · In progress</p>
+            <p class="muted">Graduate coursework includes cybersecurity, cryptography, data systems, and machine learning concepts.</p>
+          </div>
+          <div class="card">
+            <h3>Two B.S. Degrees</h3>
+            <p>Norfolk State University · May 2025</p>
+            <p class="muted">Computer Engineering Technology &amp; Electronics Engineering Technology · GPA 3.7</p>
+          </div>
+          <div class="card">
+            <h3>A.S. Liberal Arts</h3>
+            <p>Butler Community College · May 2022</p>
+            <p class="muted">GPA 3.3 · Dean's List · All-Academic Team · Women's Basketball student-athlete</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Let's connect</h2>
+        <div class="card">
+          <p>I'll be happy to connect with you!</p>
+          <p><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn profile</a></p>
+          <p class="muted">Replace this LinkedIn URL with your exact profile link.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Cameren Downs</strong></p>
+      <p>IT · Cybersecurity · Engineering</p>
+    </div>
+  </footer>
+</body>
+</html>
